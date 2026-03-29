@@ -1,0 +1,19 @@
+open cload code in terminal
+open bash mode shift+! land in bash command 
+run python -m venv venv
+activate source venv/Scripts/activate 
+install dependencies in bash mode pip install -r requirment.txt
+run the app - python app.py
+add git
+exit
+
+best pratice /slash command
+
+one section = one task
+name your session immediately 
+commit frequently within section
+use/bw for quick session -space
+export before a big refactor /
+
+/log out 
+

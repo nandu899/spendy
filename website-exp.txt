@@ -1,0 +1,56 @@
+╭─── Claude Code v2.1.86 ──────────────────────────────────────────────────────╮
+│                                         │ Tips for getting started           │
+│       Welcome back Vijayakrishnan!      │ Run /init to create a CLAUDE.md f… │
+│                                         │ ────────────────────────────────── │
+│                 ▐▛███▜▌                 │ Recent activity                    │
+│                ▝▜█████▛▘                │ No recent activity                 │
+│                  ▘▘ ▝▝                  │                                    │
+│                                         │                                    │
+│         Sonnet 4.6 · Claude Pro         │                                    │
+│   C:\claude-workspace\expense-tracker   │                                    │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+❯ tell me about project                                                         
+
+  Searched for 1 pattern, read 4 files, recalled 1 memory (ctrl+o to expand)
+
+● Here's an overview of the project:
+
+  Spendly — Expense Tracker
+
+  A Flask-based personal finance web app (named "Spendly") for tracking expenses
+   in Indian Rupees (₹).
+
+  Stack
+
+  - Backend: Python / Flask 3.1
+  - Database: SQLite (via a database/db.py module)
+  - Frontend: Jinja2 templates + custom CSS/JS
+  - Testing: pytest + pytest-flask
+
+  Current Structure
+
+  app.py               — Flask app with routes
+  database/db.py       — DB helpers (stub, not yet implemented)
+  templates/           — landing.html, login.html, register.html, base.html
+  static/css/style.css — Styling
+  static/js/main.js    — Frontend JS
+  requirements.txt     — Dependencies
+
+  What's Implemented
+
+  - Landing page with a mock expense dashboard UI
+  - /register and /login routes (render templates)
+
+  What's Stubbed / Pending
+
+  The code has placeholder routes with comments indicating a step-by-step
+  build-out:
+  - Step 1: database/db.py — get_db(), init_db(), seed_db()
+  - Step 3: /logout
+  - Step 4: /profile
+  - Steps 7–9: Add / edit / delete expenses
+
+  This looks like a teaching project — structured for students to implement
+  features step by step. The app targets Indian users (Rupee currency, "track
+  every rupee" tagline).
