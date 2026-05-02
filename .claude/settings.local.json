@@ -1,11 +1,11 @@
 {
   "permissions": {
     "allow": [
-      "Bash(python:*)",
-      "Bash(source venv/Scripts/activate)",
-      "Bash(C:/claude-workspace/expense-tracker/venv/Scripts/python.exe app.py 2>&1)",
-      "Bash(C:/claude-workspace/expense-tracker/venv/Scripts/pip.exe install:*)",
-      "Bash(C:/claude-workspace/expense-tracker/venv/Scripts/python.exe app.py)"
+      "Bash(gh pr comment:*)",
+      "Bash(gh pr review:*)",
+      "Bash(gh api:*)",
+      "Bash(curl:*)",
+      "Bash(git:*)"
     ]
   }
 }
