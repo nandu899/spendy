@@ -29,10 +29,11 @@ jobs:
       - uses: anthropics/claude-code-action@v1
         with:
           anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          show_full_output: true   # ← add this
           prompt: |
-            Review this pull request for:
-            - Code correctness and potential bugs
-            - Security vulnerabilities
-            - Performance issues
-            - Clarity and best practices
-            Only comment on changed files. Be concise and actionable.
+            Review this pull request and post a single summary comment with:
+            - Bugs or correctness issues
+            - Security concerns
+            - Performance problems
+            - Suggestions for improvement
+            Be concise. Always post your review as a PR comment even if the code looks fine.
