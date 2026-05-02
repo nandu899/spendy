@@ -32,10 +32,10 @@ jobs:
           allowed_tools: "Bash(gh pr comment:*),Bash(gh pr review:*),Bash(curl:*)"
           show_full_output: true   # ← add this
           max_turns: 5
+          claude_env: |
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           prompt: |
-            Review this pull request and post a single summary comment with:
-            - Bugs or correctness issues
-            - Security concerns
-            - Performance problems
-            - Suggestions for improvement
-            Be concise. Always post your review as a PR comment even if the code looks fine.
+            You are reviewing PR #${{ github.event.pull_request.number }} in repo ${{ github.repository }}.
+            Run: gh pr comment ${{ github.event.pull_request.number }} --repo ${{ github.repository }} --body "<your review>"
+            Review for: bugs, security issues, performance, best practices.
+            Always post a comment even if the code looks fine
